@@ -39,5 +39,8 @@ signUpButton.addEventListener("click", function(event) {
     displayMessage("success", "Registered successfully");
 
   // TODO: Save email and password to localStorage and render the last registered user
+  localStorage.setItem("#user-email", email);
+  localStorage.setItem("#user-password", password);
+  renderLastRegistered();
   }
 });
